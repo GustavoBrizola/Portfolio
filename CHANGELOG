@@ -1,3 +1,9 @@
+April 11, 2026
+    * Ai implementations on workflow
+    * Important information moved to .env
+    * Frontend connection check moved to another file
+    * Issue to solve: CheckBackend call does not work properly. Problem comes from file itself
+
 April 10, 2026
     * Log system for backend implemented
     * major folders refurb
