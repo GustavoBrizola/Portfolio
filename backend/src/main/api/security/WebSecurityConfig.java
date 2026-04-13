@@ -22,7 +22,7 @@ public class WebSecurityConfig
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception 
     {
-        // Disables CSRF protection
+        // Disables CSRF protection for SPA
         http.csrf(csrf -> csrf.spa())
             // Enable CORS
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
