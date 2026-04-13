@@ -1,5 +1,6 @@
 package api.security;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -18,19 +19,26 @@ import java.util.List;
 @Configuration // Marks the class as config component
 public class WebSecurityConfig 
 {
+    // Gets the frontend URL fron .properties
+    @Value("${frontend.server}")
+    private String Origins;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception 
     {
-        // Disables CSRF protection for SPA
-        http.csrf(csrf -> csrf.spa())
+        // Enable CSRF protection with a cookie-based repository for SPAs
+        http.csrf(csrf -> csrf.csrfTokenRepository(org.springframework.security.web.csrf.CookieCsrfTokenRepository.withHttpOnlyFalse()))
             // Enable CORS
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-            // Allow request without authentication checks
-            // For a public website, it's ok keep like that?
-            //.authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
-            // Does this provides better safe?
-            .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
+            // Restrict access: permit only specific public endpoints, require auth for others
+            .authorizeHttpRequests(auth -> auth
+                // Determines the publc endpoints 
+                // SUGGESTION: CREATE A LIST OF ENDPOINT PERMITS
+                .requestMatchers("/api/public/**", "/api/request/**")
+                .permitAll() 
+                .anyRequest()
+                .authenticated()
+        );
             
         return http.build();
     }
@@ -40,9 +48,9 @@ public class WebSecurityConfig
     public CorsConfigurationSource corsConfigurationSource() 
     {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:5173"));
+        configuration.setAllowedOrigins(List.of(Origins));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        configuration.setAllowedHeaders(List.of("*"));
+        configuration.setAllowedHeaders(List.of("Content-Type", "Authorization", "X-Requested-With", "Accept", "X-XSRF-TOKEN"));
         configuration.setAllowCredentials(true);
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);

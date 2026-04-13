@@ -1,11 +1,3 @@
-import BackendCheck from './src/api/CheckBackend.js';
-
-
-const btn = document.getElementById('button');
-
-
-btn?.addEventListener('click', () => 
-{
-    BackendCheck(true)
-});
+// This script redirects the page to MainPage.html automatically
+window.location.href = 'src/projects/MainPage.html';
 
