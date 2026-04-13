@@ -1,0 +1,21 @@
+spring.application.name=backend
+
+# Server port
+server.port=BACKEND_PORT HERE
+frontend.server=FRONTEND_URL HERE
+
+
+# Database configuration
+spring.datasource.url=DATABASE_URL HERE
+spring.datasource.driverClassName=DATABASE_DRIVER HERE
+spring.datasource.username=DATABASE_USERNAME HERE
+spring.datasource.password=USER_PASSWORD HERE
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Enable H2 console
+spring.h2.console.enabled=true
+
+# JPA configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+

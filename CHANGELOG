@@ -1,3 +1,9 @@
+April 13, 2026
+    * CheckBackend.js working properly
+        - Add parameter to inform status on browser
+    * Unexpected files on repository fixed
+    
+
 April 11, 2026
     * Ai implementations on workflow
     * Important information moved to .env
