@@ -1,0 +1,341 @@
+/* 
+    The root Can define constansts and apply to all file 
+    all declared values like margin are applied to body
+
+    leads to a more organized file
+
+    Note for myself:
+    from all the langagesm this is the most unorganized language i ever seen in entire life
+
+    .ProfileHeader
+    {
+        .ProfileName
+        {
+        }
+        .ProfilePhrase
+        {
+        }   
+    }
+*/
+body
+{
+    --FontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --BorderRadius: 2rem 2rem;
+}
+
+.ProfilePicture 
+{
+    height: 400px; /* Set your desired height */
+    width: 200px;
+    object-fit:scale-down; /* Ensures the image doesn't distort */
+}
+
+.ProfileCard
+{
+    height: fit-content;
+    width: 400px;
+    background-color: white;
+    border-radius: var(--BorderRadius);
+    padding: 1rem 2rem;
+    margin: 10px;
+}
+
+/* Profile Header */
+.ProfileHeader
+{
+    display: block;
+    text-align: center; 
+    justify-content: space-between;
+    font-weight: bold;
+}.ProfileName
+{
+    font-size: 28pt;
+    color: black;
+}.ProfilePhrase
+{
+    font-size: 14pt;
+    color: #777;
+}
+
+
+/* Profile Info */
+.ProfileInfo
+{
+    height: fit-content;
+    
+    background-color: #b1b1b1;
+    border-radius: var(--BorderRadius);
+    margin: 10px 0px;
+    padding: 1rem 2rem;
+    
+    display: flex;
+    justify-content:space-around;
+
+    font-size: 10pt;
+    font-weight: bold;
+    color: #ffffff;
+}.ProfileAge
+{  
+    width: min-content;
+    display: flex;
+    align-items: center;
+
+}.ProfileLocal a
+{ 
+    display:flex;
+    text-align: left;
+}.ProfileWork
+{
+    width: min-content;
+    display: flex;
+    align-items: center;
+}.Divider
+{
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.HorizontalDiviser
+{
+    border-radius: var(--BorderRadius);
+    background-color: #777;
+    margin: 10;
+}
+
+.ProfileDescription
+{
+    height: fit-content;
+    align-content: center;
+    padding: 1rem 0rem;
+    
+
+    font-size: 10pt;
+    font-family: var(--FontFamily);
+    text-align: center;
+    color: #5a5959;
+}
+
+.ProfileContacts a
+{
+    display: inline-flex;
+
+    margin: 10px 5px;
+    border-radius: var(--BorderRadius);
+    padding: 0.5rem 1rem;
+
+    font-family: var(--FontFamily);
+    font-weight: bold;
+    font-size: 12pt;
+    text-decoration: none;
+}.ProfilePhone
+{
+    background-color: #25D366;
+    color: white;
+}
+.ProfileEmail
+{
+    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
+}.PhoneImage
+{
+    height: 16px; /* Set your desired height */
+    width: 20px;
+    object-fit:scale-down; /* Ensures the image doesn't distort */
+}.Profilelinkedin
+{
+    background-color: #0077B5;
+    color: white;
+}
+.ProfileGithub
+{
+    background-color: #000000;
+    color: white;
+}
+
+.ProfileResume
+{
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--BorderRadius);
+    background-color: #d82424;
+    padding: 15px 30px;
+    border: none;
+    margin: 10px;
+    text-decoration: none;
+    
+
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+
+
+    transition: background-color 0.3s;
+}.ProfileResume a
+{
+    text-align: center;
+}
+/*
+:root
+{
+    --BorderRadius: 2rem 2rem;
+    --MainMargin: 10px;
+    --FontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --FontWeight: bold;
+    --ContentAlign: center;
+}
+
+.ProfileCard
+{
+
+    height: fit-content;
+    width: 400px;
+    background-color: #f0f8ff;
+    border-radius: var(--BorderRadius);
+    border: none;
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    margin: var(--MainMargin);
+}
+
+.ProfileName
+{
+
+    font-size: 24pt;
+    font-family: var(--FontFamily);
+    font-weight: var(--FontWeight);
+    color: black;
+    margin: var(--MainMargin);
+}
+
+.ProfileData
+{
+
+    background-color: #d9d9d9;
+    border-radius: var(--BorderRadius);
+    border: none;
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+    height: fit-content;;
+    align-content: center;
+
+
+    font-size: 10pt;
+    font-family: var(--FontFamily);
+    font-weight: var(--FontWeight);
+    color: #5a5959;
+}
+
+.ProfileDescription
+{
+
+    height: fit-content;
+    width: 400px;
+    align-content: center;
+    padding: 1rem 0rem;
+    
+
+    font-size: 10pt;
+    font-family: var(--FontFamily);
+    font-weight: var(--FontWeight);
+    text-align: var(--TextAlign);
+    color: #5a5959;
+}
+
+.ProfileLink a
+{   
+
+    display:flexbox;
+    font-size: 10pt;
+    font-family: var(--FontFamily);
+    font-weight: var(--FontWeight);
+    text-align: var(--TextAlign);
+    margin: var(--MainMargin);
+    text-decoration: none;
+}
+
+
+.linkedin 
+{
+    width: fit-content;
+    height: fit-content;
+    background-color: #0077B5;
+    border-radius: var(--BorderRadius);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    margin: var(--MainMargin);
+
+
+    transition: background-color 0.3s;
+}
+.linkedin-icon 
+{
+    width: 20px;  /* Set your desired width 
+    height: 12px; /* Set your desired height 
+    object-fit:scale-down; /* Ensures the image doesn't distort 
+}
+
+.linkedin:hover 
+{
+    background-color: #00517d;
+    color: white;
+}
+
+.github
+{
+    width: fit-content;
+    height: fit-content;
+    background-color: #333;
+    border-radius: var(--BorderRadius);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    margin: var(--MainMargin);
+
+    transition: background-color 0.3s;
+}
+.github-icon
+{
+    width: 20px;  /* Set your desired width 
+    height: 12px; /* Set your desired height 
+    object-fit:scale-down; /* Ensures the image doesn't distort *
+}
+.github:hover
+{
+    background-color: #222;
+    color: white;
+}
+
+/**
+    Button Settings
+
+
+.btn
+{
+
+    width: fit-content;
+    height: fit-content;
+    border-radius: var(--BorderRadius);
+    background-color: #d82424;
+    padding: 15px 30px;
+    border-style: double;
+    border: none;
+    margin: var(--MainMargin);
+    
+
+    font-family: var(--FontFamily);
+    font-size: 12pt;
+    font-weight: var(--FontWeight);
+    color: white;
+
+
+    transition: background-color 0.3s;
+}
+
+
+.btn:hover
+{
+    background-color: #902424;
+}
+*/
