@@ -31,13 +31,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: |
+          cd frontend
+          nmp install
+
+      - name: Build project
+        run: |
+          cd frontend
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload the build directory
+          path: 'frontend/build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
