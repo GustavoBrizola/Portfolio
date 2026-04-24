@@ -1,5 +1,10 @@
+April 24, 2026
+    * Fix icon display on contact links
+    * Placeholders filled with actual information
+    * Profile card content separated into modular files
+
 April 23, 2026
-    * Frontend launched to production
+    * Frontend deployed to production
     * Repository ajustments
     * Directory and files renamed
 

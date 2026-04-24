@@ -1,10 +1,10 @@
 {
-    "Name": "Your Name",
-    "Age": "Your Age",
-    "Local": ["City", "State", "Country"],
-    "Work": "Your Work profession",
-    "Phrase": "Quick Phrase",
-    "Contact": ["Your professional contacts", "Personal"],
-    "Social": ["Your Social link", "Personal Network"],
-    "Description": "Description of you. 300 characters limit"    
+    "Name": "Gustavo Silva Brizola",
+    "Age": "23 Years Old",
+    "Local": ["Porto Alegre", "Rio Grande do Sul", "Brazil"],
+    "Work": "Software Developer",
+    "Phrase": "I built this with bare hands",
+    "Contact": ["gustavo.brizola@icloud.com", "+55 51 985283336"],
+    "Social": ["https://linkedin.com/in/gustavobrizola", "https://github.com/GustavoBrizola"],
+    "Description": "Still PlaceHolder"    
 }
