@@ -1,7 +1,7 @@
 import './App.css';
 
 //import BackendCheck from './api/CheckBackend';
-import ProfileCard from './components/ProfileCard';
+import ProfileCard from './components/composites/ProfileCard';
 
 function App() 
 {

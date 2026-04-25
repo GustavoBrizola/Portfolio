@@ -1,66 +1,72 @@
-April 24, 2026
-    * Fix icon display on contact links
-    * Placeholders filled with actual information
-    * Profile card content separated into modular files
+**April 25, 2026**
+- Frontend src/ directory rearrangement. Check FRONTEND-MANUAL.MD for changes
+- Changelog format improvements
+- Migration started
+- Various abstraction across the system
 
-April 23, 2026
-    * Frontend deployed to production
-    * Repository ajustments
-    * Directory and files renamed
+**April 24, 2026**
+- Fix icon display on contact links
+- Placeholders filled with actual information
+- Profile card content separated into modular files
 
-April 21, 20, 18, 17, 2026
-    * Template complete
-    * Component Abstractions
-    * First screen complete
+**April 23, 2026**
+- Repository adjustments
+- Repository ajustments
+- Directory and files renamed
 
-April 16, 2026
-    * File structures for main page fused
+**April 21 20 18 17, 2026** 
+- Template complete
+- Component Abstractions
+- First screen complete
 
-April 15, 2026
-    * ProjectFinder.js Objectives written
-    * Main page associated files reorganized
-    * Topbar code structure refactored
+**April 16, 2026**
+- File structures for main page fused
 
-April 14, 2026
-    * Spring Boot logback.xml added to repository
-    * Site strucuture initial form
+**April 15, 2026**
+- ProjectFinder.js Objectives written
+- Main page associated files reorganized
+- Topbar code structure refactored
 
-April 13, 2026
-    * CheckBackend.js working properly
-        - Add parameter to inform status in the browser
-    * Unexpected files in the repository fixed
-    * README updated
-    * Main page moved to file inside project
-    * Backend web security impovements.
+**April 14, 2026**
+- Site structure initial form
+- Site strucuture initial form
+
+**April 13, 2026**
+- CheckBackend.js working properly
+    * Add parameter to inform status in the browser
+- Unexpected files in the repository fixed
+- README updated
+- Backend web security improvements.
+- Backend web security impovements.
     
-April 11, 2026
-    * Ai implementations on workflow
-    * Important information moved to .env
-    * Frontend connection check moved to another file
-    * Issue to solve: CheckBackend call does not work properly. Problem comes from file itself
+**April 11, 2026**
+- Ai implementations on workflow
+- Important information moved to .env
+- Frontend connection check moved to another file
+- Issue to solve: CheckBackend call does not work properly. Problem comes from file itself
 
-April 10, 2026
-    * Log system for backend implemented
-    * major folders refurb
-    * gitignore revisions
+**April 10, 2026**
+- Log system for backend implemented
+- major folders refurb
+- gitignore revisions
 
-April 8, 2026
-    * Code comments added
-    * Rewrite backend code of restAPI started
+**April 8, 2026**
+- Code comments added
+- Rewrite backend code of restAPI started
 
-April 7, 2026
-    * Connection with backend and frontend stablished properly
-        - Test made in Google Chrome on localhost
-    * Known issue: MacOS Safari won't open the URL. Verify other web browsers
-        - FireFox
-        - Opera
-        - Brave
-    * Directories rearanged
+- Connection with backend and frontend established properly
+- Connection with backend and frontend stablished properly
+    * Test made in Google Chrome on localhost
+- Known issue: MacOS Safari won't open the URL. Verify other web browsers
+    * FireFox
+    * Opera
+- Directories rearranged
+- Directories rearanged
 
-April 6, 2026
-    * First Git Commit
-    * Build API link
-    * Connection with frontend and backend attempt
+**April 6, 2026**
+- First Git Commit
+- Build API link
+- Connection with frontend and backend attempt
 
-April 5, 2026
-    * Project Preparations
+**April 5, 2026**
+- Project Preparations

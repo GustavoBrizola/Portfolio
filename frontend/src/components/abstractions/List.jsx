@@ -4,7 +4,7 @@
  * @returns 
  */
 export default
-function Data(props)
+function List(props)
 {
     const Component = props.Type;
 

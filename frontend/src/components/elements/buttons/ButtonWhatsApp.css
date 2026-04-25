@@ -1,0 +1,25 @@
+.ButtonWhatsApp
+{
+    background-color: #25D366;
+    color: white;
+    margin: 10px 5px;
+    border-radius: var(--BorderRadius);
+
+    font-family: var(--FontFamily);
+    font-weight: bold;
+    font-size: 12pt;
+    text-decoration: none;
+}
+.ButtonWhatsAppImage
+{
+    height: 16px;
+    width: 20px;
+    object-fit: scale-down;
+    vertical-align: middle;
+}
+.ButtonWhatsAppDiviser
+{
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+}

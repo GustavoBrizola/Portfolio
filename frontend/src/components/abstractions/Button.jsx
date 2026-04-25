@@ -1,5 +1,5 @@
 /**
- * Provides dinamic component and abstraction
+ * Provides dynamic component and abstraction
  * to create a button
  * @param {*} props 
  * @returns 
@@ -7,8 +7,8 @@
 export default
 function Button(props)
 {
-    // Component determines which HTML element is
-    const Component = props.Type;
+    // Component determines which HTML element is rendered (defaults to 'button')
+    const Component = props.Type || 'button';
     return (
         <Component
             className={props.ClassName} 
@@ -24,6 +24,7 @@ function Button(props)
                     src={props.Image}
                     alt={props.ImageAlt} 
                 />
+                {/* Vertical line is optional */}
                 <div className={props.VerticalDiviser}/></>
             )}
             

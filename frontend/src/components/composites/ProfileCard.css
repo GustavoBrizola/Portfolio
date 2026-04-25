@@ -1,0 +1,104 @@
+body
+{
+    --FontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --BorderRadius: 2rem 2rem;
+}
+
+.ProfilePicture 
+{
+    height: 400px; /* Set your desired height */
+    width: 200px;
+    object-fit:scale-down; /* Ensures the image doesn't distort */
+}
+
+.ProfileCard
+{
+    height: fit-content;
+    width: 400px;
+    background-color: white;
+    border-radius: var(--BorderRadius);
+    padding: 1rem 2rem;
+    margin: 10px;
+}
+
+/* Profile Header */
+.ProfileHeader
+{
+    display: block;
+    text-align: center; 
+    justify-content: space-between;
+    font-weight: bold;
+}.ProfileName
+{
+    font-size: 28pt;
+    color: black;
+}.ProfilePhrase
+{
+    font-size: 14pt;
+    color: #777;
+}
+
+
+/* Profile Info */
+.ProfileInfo
+{
+    height: fit-content;
+    
+    background-color: #b1b1b1;
+    border-radius: var(--BorderRadius);
+    margin: 10px 0px;
+    padding: 1rem 2rem;
+    
+    display: flex;
+    justify-content:space-around;
+
+    font-size: 10pt;
+    font-weight: bold;
+    color: #ffffff;
+}.ProfileAge
+{  
+    width: min-content;
+    display: flex;
+    align-items: center;
+
+}.ProfileLocal a
+{ 
+    display:flex;
+    text-align: left;
+}.ProfileWork
+{
+    width: min-content;
+    display: flex;
+    align-items: center;
+}.Divider
+{
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.HorizontalDivider
+{
+    border-radius: var(--BorderRadius);
+    background-color: #777;
+    margin: 10px;
+}
+
+.ProfileDescription
+{
+    height: fit-content;
+    align-content: center;
+    padding: 1rem 0rem;
+    
+
+    font-size: 10pt;
+    font-family: var(--FontFamily);
+    text-align: center;
+    color: #5a5959;
+}
+
+.ProfileContacts a
+{
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+}

@@ -1,5 +1,5 @@
-import Button from "./Button";
-import ProfileData from '../data/ProfileInfo.json'
+import Button from "../../abstractions/Button.jsx";
+import ProfileData from '../../../data/ProfileInfo.json'
 
 export default
 function ButtonLinkedin()
@@ -7,13 +7,16 @@ function ButtonLinkedin()
     return(
         <Button
             Type={'a'}
-            ClassName={'Profilelinkedin'}
+            ClassName={'ButtonLinkedin'}
+
             Href={ProfileData.Social[0]}
             Target={'_blank'}
             Rel={'noopener noreferrer'}
-            ClassImage={'PhoneImage'}
+
+            ClassImage={'ButtonLinkedinImage'}
             Image={'images/ico/LogoLinkedin.png'}
-            VerticalDiviser={'Divider'}
+            VerticalDiviser={'ButtonLinkedinDiviser'}
+            
             Text={'LinkedIn'}
         />
     );

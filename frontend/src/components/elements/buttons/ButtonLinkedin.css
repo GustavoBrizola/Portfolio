@@ -1,0 +1,25 @@
+.ButtonLinkedin
+{
+    background-color: #0077B5;
+    color: white;
+    margin: 10px 5px;
+    border-radius: var(--BorderRadius);
+
+    font-family: var(--FontFamily);
+    font-weight: bold;
+    font-size: 12pt;
+    text-decoration: none;
+}
+.ButtonLinkedinImage
+{
+    height: 16px; /* Set your desired height */
+    width: 20px;
+    object-fit:scale-down; /* Ensures the image doesn't distort */
+    align-items: center;
+}
+.ButtonLinkedinDiviser
+{
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+}

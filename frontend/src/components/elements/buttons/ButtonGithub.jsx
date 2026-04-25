@@ -1,5 +1,5 @@
-import Button from "./Button"
-import ProfileData from '../data/ProfileInfo.json'
+import Button from "../../abstractions/Button.jsx";
+import ProfileData from '../../../data/ProfileInfo.json'
 
 
 export default
@@ -8,13 +8,16 @@ function ButtonGithub()
     return(
         <Button
             Type={'a'}
-            ClassName={'ProfileGithub'}
+            ClassName={'ButtonGithub'}
+            
             Href={ProfileData.Social[1]}
             Target={'_blank'}
             Rel={'noopener noreferrer'}
-            ClassImage={'PhoneImage'}
+            
+            ClassImage={'ButtonGithubImage'}
             Image={'images/ico/LogoGithub.png'}
-            VerticalDiviser={'Divider'}
+            VerticalDiviser={'ButtonGithubDiviser'}
+
             Text={'GitHub'}
         />
     )

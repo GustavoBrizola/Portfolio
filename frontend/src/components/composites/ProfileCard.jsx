@@ -1,19 +1,27 @@
 // Styles
-import './styles/ProfileCard.css';
+import './ProfileCard.css';
 
 // Scripts
-import TruncateText from '../scripts/TruncateText';
+import TruncateText from '../../scripts/TruncateText';
 
 // Json
-import ProfileData from '../data/ProfileInfo.json'
+import ProfileData from '../../data/ProfileInfo.json'
 
-// Components
-import Data from './Data';
-import ButtonDownloadResume from './ButtonDownloadResume';
-import ButtonLinkedin from './ButtonLinkedin';
-import ButtonGithub from './ButtonGithub';
-import ButtonEmail from './ButtonEmail';
-import ButtonWhatsApp from './ButtonWhatsApp';
+// Abstractions
+import List from                    '../abstractions/List';
+
+// Buttons
+import ButtonDownloadResume from    '../elements/buttons/ButtonDownloadResume';
+import ButtonLinkedin from          '../elements/buttons/ButtonLinkedin';
+import ButtonGithub from            '../elements/buttons/ButtonGithub';
+import ButtonEmail from             '../elements/buttons/ButtonEmail';
+import ButtonWhatsApp from          '../elements/buttons/ButtonWhatsApp';
+// CSS
+import                              '../elements/buttons/ButtonDownloadResume.css';
+import                              '../elements/buttons/ButtonEmail.css';
+import                              '../elements/buttons/ButtonGithub.css';
+import                              '../elements/buttons/ButtonLinkedin.css';
+import                              '../elements/buttons/ButtonWhatsApp.css';
 
 /**
  * Structural profile
@@ -32,17 +40,17 @@ function ProfileCard()
             </div>
             <div className='ProfileInfo'>
                 <div className='ProfileAge'>
-                    <Data Type={'a'} Info={ProfileData.Age}/>
+                    <List Type={'a'} Info={ProfileData.Age}/>
                 </div>
                 <div className='Divider'/>
                 <div className='ProfileLocal'>
-                    <Data Type={'a'} Info={ProfileData.Local[0]}/>
-                    <Data Type={'a'} Info={ProfileData.Local[1]}/>
-                    <Data Type={'a'} Info={ProfileData.Local[2]}/>
+                    <List Type={'a'} Info={ProfileData.Local[0]}/>
+                    <List Type={'a'} Info={ProfileData.Local[1]}/>
+                    <List Type={'a'} Info={ProfileData.Local[2]}/>
                 </div>
                 <div className='Divider'/>
                 <div className='ProfileWork'>
-                    <Data Type={'a'} Info={ProfileData.Work}/>
+                    <List Type={'a'} Info={ProfileData.Work}/>
                 </div>
             </div>
             <div className='ProfileDescription'>{TruncateText(ProfileData.Description, 300)}</div>            
