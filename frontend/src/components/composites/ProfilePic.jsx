@@ -12,12 +12,12 @@ function ProfilePic()
   return (
     <div className='ProfilePic'>
       <img className='ProfilePicWallpaper'
-        src='Portfolio/images/photos/Wallpaper.jpg'
+        src='images/photos/Wallpaper.jpg'
         alt='Wallpaper'
       />
       <div className='ProfilePicContent'>
         <img className='ProfilePicPhoto'
-          src='Portfolioimages/photos/ProfilePicPhoto.png'
+          src='images/photos/ProfilePicPhoto.png'
           alt='Pic'
         />
         {ProfileData.Name}
