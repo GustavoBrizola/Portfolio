@@ -1,10 +1,10 @@
 import './MainPage.css'
 
 // elements
-import TopBar from      'src/components/composites/TopBar';
-import AboutMeCard from 'src/components/composites/AboutMeCard';
-import ProfilePic from  'src/components/composites/ProfilePic';
-import BottomBar from   'src/components/composites/BottomBar';
+import TopBar from      '../components/composites/TopBar';
+import AboutMeCard from '../components/composites/AboutMeCard';
+import ProfilePic from  '../components/composites/ProfilePic';
+import BottomBar from   '../components/composites/BottomBar';
 
 export default
 function MainPage()

@@ -3,6 +3,6 @@ import MainPage from './sites/MainPage';
 
 test('renders MainPage react link', () => {
   render(<MainPage/>);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const aboutElement = screen.getByText(/Gustavo Silva Brizola/i);
+  expect(aboutElement).toBeInTheDocument();
 });
