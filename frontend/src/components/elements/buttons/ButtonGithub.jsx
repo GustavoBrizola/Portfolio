@@ -1,5 +1,5 @@
-import Button from "../../abstractions/Button.jsx";
-import ProfileData from '../../../data/ProfileInfo.json'
+import Button from "src/components/abstractions/Button.jsx";
+import ProfileData from 'src/data/ProfileInfo.json'
 
 
 export default

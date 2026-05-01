@@ -1,5 +1,5 @@
-import List from "../../abstractions/List"
-import ProfileData from '../../../data/ProfileInfo.json'
+import List from "src/components/abstractions/List"
+import ProfileData from 'src/data/ProfileInfo.json'
 
 export default
 function ListPersonalInfo()

@@ -1,4 +1,4 @@
-import Button from "../../abstractions/Button.jsx";
+import Button from "src/components/abstractions/Button.jsx";
 
 /**
  * 

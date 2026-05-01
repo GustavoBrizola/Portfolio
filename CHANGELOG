@@ -1,3 +1,9 @@
+**April 30, 2026**
+- Import path of multiple files optimized
+- Icon and name tab modified
+- Site final form moved to a more appropriate folder
+- Image folder reorganized
+
 **April 29, 2026**
 - Site layout refactored
 - Components folders optimized, specially for styles
@@ -6,7 +12,6 @@
 - About Me square created
 - Top Bar created
 - Bottom Bar Placed
-
 
 **April 28, 2026**
 - Personal Info section from ProfileCard abstracted into own file

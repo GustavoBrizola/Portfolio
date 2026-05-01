@@ -2,10 +2,10 @@
 import './styles/ProfileCard.css';
 
 // Scripts
-import TruncateText from '../../scripts/TruncateText';
+import TruncateText from 'src/scripts/TruncateText';
 
 // Json
-import ProfileData from '../../data/ProfileInfo.json'
+import ProfileData from 'src/data/ProfileInfo.json'
 
 // Buttons
 import ButtonDownloadResume from    '../elements/buttons/ButtonDownloadResume';

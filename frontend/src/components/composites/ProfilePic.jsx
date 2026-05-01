@@ -1,10 +1,9 @@
 import './styles/ProfilePic.css'
-import ProfileData from '../../data/ProfileInfo.json'
+import ProfileData from 'src/data/ProfileInfo.json'
 
 // Elements
-import ListPersonalInfo from '../elements/list/ListPersonalInfo';
-import '../elements/list/styles/ListPersonalInfo.css';
-
+import ListPersonalInfo from 'src/components/elements/list/ListPersonalInfo';
+import 'src/components/elements/list/styles/ListPersonalInfo.css';
 
 export default
 function ProfilePic()
@@ -12,12 +11,12 @@ function ProfilePic()
   return (
     <div className='ProfilePic'>
       <img className='ProfilePicWallpaper'
-        src='images/photos/Wallpaper.jpg'
+        src='images/wallpaper/ProfileWallpaper.jpg'
         alt='Wallpaper'
       />
       <div className='ProfilePicContent'>
         <img className='ProfilePicPhoto'
-          src='images/photos/ProfilePicPhoto.png'
+          src='images/profile/ProfilePicPhoto.png'
           alt='Pic'
         />
         {ProfileData.Name}

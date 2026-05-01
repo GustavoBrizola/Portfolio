@@ -1,4 +1,4 @@
-import ProfileData from '../../data/ProfileInfo.json'
+import ProfileData from 'src/data/ProfileInfo.json'
 import './styles/AboutMeCard.css'
 
 export default
