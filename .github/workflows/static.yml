@@ -36,12 +36,9 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: |
-          cd frontend
-          npm install
+        run: npm ci
       - name: Build project
         run: |
-          cd frontend
           npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -49,7 +46,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload the build directory
-          path: 'frontend/build'
+          path: 'dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

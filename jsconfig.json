@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "checkJs": true,
+    "strict": false,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es2015",
+    "baseUrl": "src",
+    "paths": {
+      "components/*": ["components/*"],
+      "json/*": ["json/*"],
+      "scripts/*": ["scripts/*"],
+      "site/*": ["site/*"],
+    },
+    "ignoreDeprecations":"6.0"
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "build",
+    ".vscode",
+    "coverage",
+    ".npm",
+    ".yarn"
+  ],
+  "typeAcquisition": {
+    "enable": true,
+    "include": [
+      "react",
+      "react-dom",
+      "jest",
+      "testing-library__jest-dom"
+    ]
+  }
+}
