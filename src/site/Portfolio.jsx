@@ -1,8 +1,6 @@
 import React from 'react';
 
-// @ts-ignore
 import './Portfolio.css'; 
-
 import ProfilePic from 'components/composites/ProfilePic';
 
 /**
@@ -14,6 +12,8 @@ function Portfolio()
 {
  
   return (
-    <ProfilePic/>
+    <div className='portfolio'>
+      <ProfilePic/>
+    </div>
   )
 }

@@ -5,7 +5,7 @@
  * @param {Number} maxRange 
  */
 export
-function RandomNumber(minRange = 0, maxRange = 9)
+function RandomNumber(minRange = 0, maxRange = minRange+9)
 {
 
 }
