@@ -40,7 +40,7 @@ function Button(props)
     } = props;
     
     // Code here
-    const Component = type || 'button';
+    const Component = true ? type : 'button';
     const ImageBlock = image &&
     (
         <>

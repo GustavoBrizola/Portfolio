@@ -16,6 +16,10 @@ export default defineConfig(({ mode }) => {
       __APP_ENV__: JSON.stringify(env.APP_ENV),
     },
 
+    // Public Endpoint
+    // https://vite.dev/guide/static-deploy
+    base: '/Portfolio/',
+
     // Server dev port
     // https://vite.dev/config/server-options
     server: { 
