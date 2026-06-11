@@ -9,7 +9,7 @@ function AboutMe()
     return (
         <>
             <div>
-                <img src="/images/photos/PhotosProfilepic.png"/>
+                <img src="/images/photos/PhotosProfilePic.png"/>
             </div>
             <h3>Gustavo Silva Brizola</h3>
             <h5>Software Developer</h5>

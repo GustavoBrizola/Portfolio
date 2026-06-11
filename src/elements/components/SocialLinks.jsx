@@ -12,7 +12,7 @@ function SocialLinks()
             </a>
 
             <a aria-label="Open LinkedIn profile" href="https://www.linkedin.com/in/gustavobrizola/">
-                <img src="/images/ico/LogoLinkedIn.png" alt="LinkedIn logo"/>
+                <img src="/images/ico/LogoLinkedin.png" alt="LinkedIn logo"/>
                 <p>LinkedIn</p>
             </a>
         </>
