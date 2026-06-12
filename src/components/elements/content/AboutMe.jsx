@@ -1,10 +1,11 @@
 import React from "react";
 
-import SocialLinks from "../SocialLinks";
-import ContactLinks from "../ContactLinks";
+import SocialLinks from "components/elements/SocialLinks";
+import ContactLinks from "components/elements/ContactLinks";
 
-// @ts-ignore
-import pPhoto from '/images/photos/PhotosProfilePic.png'
+// That's how to import files from public folder
+// https://vite.dev/guide/assets
+import pPhoto from '/images/photos/avatar_placeholder.png'
 
 export default
 function AboutMe()

@@ -222,7 +222,7 @@ body {
     border: 0 solid transparent;
     border-top: var(--border) solid var(--color_borders);
     padding: var(--page-bottom-padding);
-
+    
     & > * {
         border: 0;
         font-size: var(--page-bottom-text-size);
@@ -230,6 +230,10 @@ body {
         margin: auto 5pt; 
         background: none;
         text-decoration: none;
+    }
+
+    a {
+        
     }
 
     a:hover {

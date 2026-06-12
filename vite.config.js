@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
         // Add absolute paths here (e.g.)
         //'pathname': path.resolve(__dirname, './path/to/folder'),
         // import { function, ... } from 'pathname/path/to/file'
-        'elements': path.resolve(__dirname, './src/elements'),
+        'components': path.resolve(__dirname, './src/components'),
         'json': path.resolve(__dirname, './src/json'),
         'js': path.resolve(__dirname, './src/js'),
         'page': path.resolve(__dirname, './src/page'),
