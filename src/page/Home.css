@@ -176,6 +176,9 @@ body {
     width: var(--page-width);
     top: 0;
     height: 100%;
+    /* padding-left: 50pt; */
+    /* padding-right: 50pt; */
+    /* padding: 50pt; */
     border-top: 0;
     border-bottom: 0;
 
@@ -230,10 +233,6 @@ body {
         margin: auto 5pt; 
         background: none;
         text-decoration: none;
-    }
-
-    a {
-        
     }
 
     a:hover {

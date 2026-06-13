@@ -21,7 +21,7 @@ function Portfolio() {
   // HTML elements(body, div, nav, etc.) per .css individually
   useEffect(() => {
     // @ts-ignore
-    import('components/styles/Portfolio.css');
+    import('./Portfolio.css');
   }, [])
 
   // Content Map
@@ -29,7 +29,7 @@ function Portfolio() {
   const contentMap = {
     projects: ['Projects', <Projects/>],
     resume: ['Resume', <Resume/>],
-    about: ['About Me', <AboutMe/>],
+    about: ['About', <AboutMe/>],
   };
   const [activeSection, setActiveSection] = useState('about');
   

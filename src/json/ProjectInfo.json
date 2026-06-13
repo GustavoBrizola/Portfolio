@@ -1,6 +1,12 @@
 {
-    "Version": "2026.0.1",
-    "PublicName":"Portfolio",
-    "BrowseTabName":"Gustavo Brizola - Portfolio",
-    "Thumbnail":"https://github.com/GustavoBrizola.png"
+    "projectName":"Portfolio",
+    "Version": "2026.06.1",
+    "description": "",
+    "projectStartDate":"April 5, 2026",
+    "developers":["Gustavo Silva Brizola"],
+
+    "browseInfo": {
+        "browseTab_thumbnail":"https://github.com/GustavoBrizola.png",
+        "browseTab_name":"Gustavo Brizola - Portfolio"
+    }
 }
