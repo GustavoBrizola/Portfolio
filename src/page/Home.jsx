@@ -21,7 +21,7 @@ function Portfolio() {
   // HTML elements(body, div, nav, etc.) per .css individually
   useEffect(() => {
     // @ts-ignore
-    import('./Portfolio.css');
+    import('./Home.css');
   }, [])
 
   // Content Map
