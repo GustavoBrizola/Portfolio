@@ -44,7 +44,7 @@ export default defineConfig(({ mode }) => {
         'components': path.resolve(__dirname, './src/components'),
         'json': path.resolve(__dirname, './src/json'),
         'js': path.resolve(__dirname, './src/js'),
-        'page': path.resolve(__dirname, './src/page'),
+        'pages': path.resolve(__dirname, './src/pages'),
       },
     },
   }

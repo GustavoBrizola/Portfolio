@@ -1,0 +1,34 @@
+{
+    "database-connector": {
+        "name": "Database Connector",
+        "description": "Java project that connects to a relational database via JDBC. Use JNA library and Libinjection for SQL injection prevention",
+        "image": {
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+        },
+        "date": {
+            "start": "February 16, 2026",
+            "launch": "March 5, 2026"
+        },
+        "tags": ["Java", "mySQL", "database", "JDBC"],
+        "link": {
+            "github":"https://github.com/GustavoBrizola/Database-Connector"
+        }
+    },
+    
+    "rotating-squares": {
+        "name": "Rotating Squares",
+        "description": "Simple site of nine multicoloured squares rotating",
+        "image": {
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        },
+        "date": {
+            "start": "May 5, 2026",
+            "launch": "May 13, 2026"
+        },
+        "tags": ["React", "JSX", "CSS", "JS", "nodeJS"],
+        "link": {
+            "github": "https://github.com/GustavoBrizola/RotatingSquares",
+            "site": "https://gustavobrizola.github.io/RotatingSquares/"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "GustavoBrizola": {
+        "local": {
+            "city": "Porto Alegre",
+            "estate": "Rio Grande do Sul",
+            "country": "Brasil"
+        },
+        "contacts" : {
+            "whatsapp": "5551985283336",
+            "linkedin": "https://www.linkedin.com/in/gustavobrizola/",
+            "github": "https://github.com/GustavoBrizola",
+            "mail": "gustavo.brizola@icloud.com"
+        }
+    }
+}

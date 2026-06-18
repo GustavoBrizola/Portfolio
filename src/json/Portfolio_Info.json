@@ -1,0 +1,10 @@
+{
+    "name": "Portfolio",
+    "version": "v2026.07",    
+    "description": "Main hub to present personal projects and work for the public",
+    "developer":"Gustavo Silva Brizola",
+    "date": {
+        "start": "April 5, 2026",
+        "launch": "April 23, 2026"
+    }
+}
