@@ -218,11 +218,6 @@ body {
             margin: 10px;
             cursor: pointer;
 
-            img {
-                width: 18px;
-                margin: 0 10px 0 0px;
-            }
-
             &:hover {background-color: var(--color_selection);}
             
             &:active

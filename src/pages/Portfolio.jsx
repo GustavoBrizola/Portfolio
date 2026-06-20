@@ -6,11 +6,11 @@ import'components/styles/Portfolio.css';
 import portfolio from 'json/Portfolio_Info.json'
 import avatar from '/images/photos/avatar_placeholder.png'
 
-import Home from "components/elements/sections/Home";
-import Projects from "components/elements/sections/Projects";
-import Resume from "components/elements/sections/Resume";
-import About from "components/elements/sections/About";
-import Contact from "components/elements/sections/Contact";
+import Home from "components/portfolio/sections/Home";
+import Projects from "components/portfolio/sections/Projects";
+import Resume from "components/portfolio/sections/Resume";
+import About from "components/portfolio/sections/About";
+import Contact from "components/portfolio/sections/Contact";
 
 export default
 function Portfolio() {
@@ -44,7 +44,7 @@ function Portfolio() {
                 </div>
             </section>
             <footer className="footer">
-                <span>©2026 design and developed by {portfolio.developer}</span>
+                <span>© 2026 design and developed by {portfolio.developer}</span>
                 <div>
                     <a href='https://github.com/GustavoBrizola/Portfolio' target='_blank' rel='noopener noreferrer'>Repository</a>
                     <a href='https://github.com/GustavoBrizola/Portfolio/issues' target='_blank' rel='noopener noreferrer'>Report Bug</a>

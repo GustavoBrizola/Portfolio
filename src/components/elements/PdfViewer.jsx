@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { Document, Page, pdfjs } from 'react-pdf'
 
-// Removes debug text from react-pdf
+// react-pdf stuff
+import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
@@ -12,7 +12,8 @@ function PdfViewer(props) {
 
     const {
         file,
-        pages
+        pages,
+        textSelect = false
     } = props
 
     // Get number of pages from file
@@ -29,7 +30,7 @@ function PdfViewer(props) {
                     <Page 
                         key={`page_${pageNumber}`}
                         pageNumber={pageNumber} 
-                        renderTextLayer={true}          // Allow text selection
+                        renderTextLayer={textSelect}
                         renderAnnotationLayer={false}
                         width={window.innerWidth > 800 ? 600 : window.innerWidth * 0.9}
                     />
